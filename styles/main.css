@@ -78,3 +78,40 @@ section.Logo > * {
 footer {
     text-align: right;
 }
+
+
+
+
+
+.title-page__countryImage {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.title-page__countryImage > div {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+    height: 100px;
+}
+
+.title-page__countryImage img{
+    width: 80%;
+    height: 100px;
+    object-fit: cover;
+  
+}
+
+.title-page__countryImage--overlay-text {
+    font-size: 28px;
+    line-height: 40%;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-decoration: none;
+
+  }
