@@ -29,7 +29,7 @@ section.country-info {
   letter-spacing: 0.125em;
 }
 
-.navLinks {
+.nav-link {
   padding: 0.5rem 1rem;
 }
 
@@ -67,8 +67,19 @@ h1 {
   text-align: center;
 }
 
-section.Logo {
+header > section {
   display: flex;
+  
+}
+
+section.logo h2 {
+  font-size: 10px;
+}
+
+section.Logo {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
   justify-content: flex-start;
   padding-inline-end: 2rem;
   font-family: "Roboto Slab", serif;
@@ -76,6 +87,10 @@ section.Logo {
 
 section.Logo > * {
   padding-inline-end: 2rem;
+}
+
+.logo__country-header {
+  flex: 7;
 }
 
 footer {
