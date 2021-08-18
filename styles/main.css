@@ -6,17 +6,17 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-section.country-info {
+.country-info {
   display: flex;
   flex-flow: row wrap;
   flex: 3 1 30%;
 }
 
-.text--no-decoration a {
+.text--no-decoration {
   text-decoration: none;
 }
 
-.headerLinks {
+.header-links {
   list-style-type: none;
   display: flex;
   flex-direction: row;
@@ -29,33 +29,34 @@ section.country-info {
   letter-spacing: 0.125em;
 }
 
-.navLinks {
+.header-link {
   padding: 0.5rem 1rem;
 }
 
-section.Logo > img {
+.logo__icon {
   width: 60px;
   height: 60px;
 }
 
-.countryContent > * {
+.country-content__list {
   margin: 1rem;
 }
 
-.countryImage img {
+.country-image__image {
   width: 100%;
   height: 200px;
   object-fit: cover;
 }
 
-section.countryContent > * {
+.country-content__list {
   padding: 2rem;
   width: 240px;
   background-color: #ffffff;
   border-radius: 10px;
+  margin: 1rem;
 }
 
-section.countryContent {
+.country-content {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -63,32 +64,43 @@ section.countryContent {
   align-items: center;
 }
 
-h1 {
-  text-align: center;
+header > section {
+  display: flex;
+  
 }
 
-section.Logo {
+.logo {
+  flex: 2;
   display: flex;
+  flex-direction: row;
   justify-content: flex-start;
   padding-inline-end: 2rem;
   font-family: "Roboto Slab", serif;
+  align-items: center;
+  flex-wrap: nowrap;
+font-family: "Roboto Slab", serif;
 }
 
-section.Logo > * {
+.logo__icon,
+.logo__headline {
   padding-inline-end: 2rem;
 }
 
-footer {
+.logo__country-header {
+  flex: 7;
+}
+
+.footer__text {
   text-align: right;
 }
 
-.title-page__countryImage {
+.title-page__nav-links {
   position: relative;
   text-align: center;
   color: white;
 }
 
-.title-page__countryImage > div {
+.title-page__nav-links > div {
   position: relative;
   text-align: center;
   color: white;
@@ -96,7 +108,7 @@ footer {
   height: 100px;
 }
 
-.title-page__countryImage img {
+.nav-link img {
   width: 80%;
   height: 100px;
   object-fit: cover;
@@ -115,4 +127,18 @@ footer {
 
 main {
   margin-block-start: 4rem;
+}
+
+.country-name {
+  text-align: center;
+}
+
+.header-link.text--no-decoration:active {
+  background-color: #ffffffff;
+  border-radius: 50px;
+}
+
+.active {
+  background-color: #ffffffff;
+  border-radius: 50px;
 }
