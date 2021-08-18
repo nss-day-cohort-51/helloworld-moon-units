@@ -132,3 +132,13 @@ main {
 .country-name {
   text-align: center;
 }
+
+.header-link.text--no-decoration:active {
+  background-color: #ffffffff;
+  border-radius: 50px;
+}
+
+.active {
+  background-color: #ffffffff;
+  border-radius: 50px;
+}
